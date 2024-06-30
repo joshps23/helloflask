@@ -13,7 +13,8 @@ import cv2
 from YOLO_Video import video_detection
 
 from wtforms import FileField, SubmitField
-app = Flask(__name__)
+application = Flask(__name__)
+app=application
 app.config['SECRET_KEY'] = 'anewflaskapp'
 app.config['UPLOAD_FOLDER'] = 'static/files'
 
